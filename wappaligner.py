@@ -34,7 +34,7 @@ if __name__ == "__main__":
 
         sExploitdbUrl = "https://www.exploit-db.com/search?q=" + urllib.parse.quote(app["name"])
         sGoogleUrl = "https://www.google.com/search?q=" + urllib.parse.quote("\"" + app["name"] + "\"" + sVersion2 + " cve |exploit |vulnerability |update |changelog |risk |advisory |cvss")
-        print (app["name"] + sVersion1 + " (" + app["confidence"] + "%)")
+        print (app["name"] + sVersion1 + " (" + str(app["confidence"]) + "%)")
         print (" - " + app["website"])
         print (" - " + sExploitdbUrl)
         print (" - " + sGoogleUrl)
